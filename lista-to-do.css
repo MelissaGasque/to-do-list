@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(111, 237, 115), rgb(21, 233, 240));
+    min-height: 100v;
+}
+header, label{
+    font-size: 1.5rem;
+    min-height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+label input, label button{
+    /*Cria o estilo tanto para o botao como para a caixa de texto*/
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: #fff;
+}
+label button{
+    color: #060827;
+    background: rgba(136, 127, 240, 0.945);
+    cursor: pointer;
+    transition: all 0,3s ease;
+}
+label button:hover {
+    background:rgba(249, 232, 47, 0.984);
+    color:rgb(141, 3, 26);
+}
+.todo-container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.todo-list {
+    min-width: 50%;
+    list-style:none;
+}
+.tudo{
+    margin: 0.5rem;
+    background: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: all 0.5s ease;
+}
+.tudo li{
+    flex: 1;
+}
+.completed-btn, .trash-bnt {
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.completed-btn{
+    background-color: rgb(9, 140, 207);
+}
+.trash-bnt{
+    background-color: red;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
